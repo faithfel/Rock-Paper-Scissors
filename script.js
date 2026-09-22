@@ -1,0 +1,22 @@
+const computerScoreEl = document.querySelector('.computerScore span');
+const playerScoreEl = document.querySelector('.playerScore span');
+const actionEl = document.querySelectorAll('.action');
+const footerEl = document.querySelector('.footer');
+const playerPickedEl = document.querySelector('.playerPicked span');
+const computerPickedEl = document.querySelector('.computerPicked span');
+const resultEl = document.querySelector('.result');
+const resetEl = document.querySelector('.reset u');
+
+
+const rock = action[0];
+const paper = action[1];
+const scissors = action[2];
+
+for( i = 0; i < action.length; i++){
+    action[i].addEventListener("click", actionClick);
+}
+function actionClick(e) {
+    const actionEl = e.currentTarget.id;
+
+    console.log(actionEl)
+}
