@@ -8,12 +8,8 @@ const resultEl = document.querySelector('.result');
 const resetEl = document.querySelector('.reset u');
 
 
-const rock = action[0];
-const paper = action[1];
-const scissors = action[2];
-
-for( i = 0; i < action.length; i++){
-    action[i].addEventListener("click", actionClick);
+for( i = 0; i < actionEl.length; i++){
+    actionEl[i].addEventListener("click", actionClick);
 }
 function actionClick(e) {
     const actionEl = e.currentTarget.id;
